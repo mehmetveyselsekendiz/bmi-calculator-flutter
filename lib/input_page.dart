@@ -7,6 +7,7 @@ import 'icon_content.dart';
 import 'constants.dart';
 import 'button.dart';
 import 'results_page.dart';
+import 'bottom_button.dart';
 
 class InputPage extends StatefulWidget {
   @override
@@ -167,7 +168,7 @@ class _InputPageState extends State<InputPage> {
                           children: [
                             RoundIconButton(
                                 icon: FontAwesomeIcons.minus,
-                                buttonFunction: (){
+                                buttonFunction: () {
                                   setState(() {
                                     ageArrange(-1);
                                   });
@@ -175,7 +176,7 @@ class _InputPageState extends State<InputPage> {
                             SizedBox(width: 10.0),
                             RoundIconButton(
                                 icon: FontAwesomeIcons.plus,
-                                buttonFunction: (){
+                                buttonFunction: () {
                                   setState(() {
                                     ageArrange(1);
                                   });
@@ -189,19 +190,12 @@ class _InputPageState extends State<InputPage> {
               ],
             ),
           ),
-          GestureDetector(
-            onTap: (){
-              setState(() {
-                Navigator.push(context, MaterialPageRoute(builder: (context) =>ResultsPage() ));
-              });
+          BottomButton(
+            buttonTitle: 'CALCULATE',
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => ResultsPage()));
             },
-            child: Container(
-              child: Text('CALCULATE', style: kLabelTextStyle,),
-              color: kBottomContainerColor,
-              margin: EdgeInsets.only(top: 10.0),
-              width: double.infinity,
-              height: kBottomContainerHeight,
-            ),
           )
         ],
       ),
