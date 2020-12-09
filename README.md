@@ -4,7 +4,7 @@ This is a Body Mass Index Calculator inspired by the beautiful designs
 made by [Ruben Vaalt](https://dribbble.com/shots/4585382-Simple-BMI-Calculator).
 It will be a multi screen app with simple functionality but full-on custom styling. 
 
-![Finished App](https://github.com/londonappbrewery/Images/blob/master/bmi-calc-demo.gif)
+![bmi-1-screenshoot](https://user-images.githubusercontent.com/48597730/101699016-86b7f500-3a8b-11eb-91d4-afb517b50414.png)   ![bmi-2-screenshoot](https://user-images.githubusercontent.com/48597730/101699023-89b2e580-3a8b-11eb-973c-ad1a84b19781.png)
 
 ## Subjects
 
